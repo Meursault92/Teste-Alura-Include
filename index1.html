@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box">
+		<form class="form">
+			<h2>Login</h2>
+			<div class="inputBox">
+				<input type="text" required="required" id="userName">
+				<span>Email Address</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required" id="password">
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="#">Forgot Password ?</a>
+				<a href="#">Sign up</a>
+			</div>
+			<input type="submit" value="Login" onclick="logar(); return false">
+		
+		</form>
+<!-- Transcrever de js script para py script-->
+<!--py script está sendo construído pelo mesmo grupo que 
+fez o editor de texto anaconda, fase Alpha-->
+
+<!--tag lógica para mostrar pop-up se caso  o usuário digitar e-mail e senha correta-->
+			<script>    
+                function logar()
+        		{
+            		var userName = document.getElementById('userName').value;
+            		var password = document.getElementById('password').value;
+
+            		if(userName == "admin@admin" && password =="admin")
+            	{
+                	alert('Acesso bem sucedido');
+            	}
+            		else
+            	{
+               		alert('Acesso negado');
+            	}
+        }
+            </script>
+		</form>
+	</div>
+</body>
+</html>
