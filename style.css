@@ -1,19 +1,13 @@
 /* Importação da fonte do google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-/* Seletor "*" para inserir todas as propriedades em todas as tags*/
-*
-
-{
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
-/* Propriedade de flex container com propriedades de alinhamento, papel de fundo
+}/* Propriedade de flex container com propriedades de alinhamento, papel de fundo
  para manipular os elementos herdeiros de propriedades posteriormente*/
-body 
-{
+body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,8 +15,7 @@ body
 	flex-direction: column;
 	background-image: url('https://wallpaperaccess.com/full/6109378.png');
 }
-.box 
-{
+.box{
 	position: relative;
 	width: 380px;
 	height: 420px;
@@ -30,8 +23,7 @@ body
 	border-radius: 8px;
 	overflow: hidden;
 }
-.box::before 
-{
+.box::before{
 	content: '';
 	z-index: 2;
 	position: absolute;
@@ -43,8 +35,7 @@ body
 	background: linear-gradient(0deg,transparent,#2aa4eb,#2aa4eb);
 	animation: animate 6s linear infinite;
 }
-.box::after 
-{
+.box::after{
 	content: '';
 	z-index: 1;
 	position: absolute;
@@ -57,8 +48,7 @@ body
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
-@keyframes animate 
-{
+@keyframes animate{
 	0%
 	{
 		transform: rotate(0deg);
@@ -68,8 +58,7 @@ body
 		transform: rotate(360deg);
 	}
 }
-form 
-{
+form{
 	position: absolute;
 	inset: 3px;
 	background: #000000;
@@ -79,21 +68,18 @@ form
 	display: flex;
 	flex-direction: column;
 }
-h2 
-{
+h2{
 	color: #118e97;
 	font-weight: 500;
 	text-align: center;
 	letter-spacing: 0.5em;
 }
-.inputBox 
-{
+.inputBox{
 	position: relative;
 	width: 300px;
 	margin-top: 35px;
 }
-.inputBox input 
-{
+.inputBox input{
 	position: relative;
 	width: 100%;
 	padding: 20px 10px 10px;
@@ -107,8 +93,7 @@ h2
 	transition: 0.5s;
 	z-index: 10;
 }
-.inputBox span 
-{
+.inputBox span{
 	position: absolute;
 	left: 0;
 	padding: 20px 0px 10px;
@@ -119,14 +104,12 @@ h2
 	transition: 0.5s;
 }
 .inputBox input:valid ~ span,
-.inputBox input:focus ~ span 
-{
+.inputBox input:focus ~ span{
 	color: #657de6;
 	transform: translateX(0px) translateY(-34px);
 	font-size: 0.75em;
 }
-.inputBox i 
-{
+.inputBox i{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -140,29 +123,24 @@ h2
 	z-index: 9;
 }
 .inputBox input:valid ~ i,
-.inputBox input:focus ~ i 
-{
+.inputBox input:focus ~ i{
 	height: 44px;
 }
-.links 
-{
+.links{
 	display: flex;
 	justify-content: space-between;
 }
-.links a 
-{
+.links a{
 	margin: 10px 0;
 	font-size: 0.75em;
 	color: #8f8f8f;
 	text-decoration: beige;
 }
 .links a:hover, 
-.links a:nth-child(2)
-{
+.links a:nth-child(2){
 	color: #8f8f8f;
 }
-input[type="submit"]
-{
+input[type="submit"]{
 	border: none;
 	outline: none;
 	padding: 11px 25px;
@@ -173,9 +151,6 @@ input[type="submit"]
 	width: 100px;
 	margin-top: 10px;
 }
-input[type="submit"]:active 
-{
+input[type="submit"]:active{
 	opacity: 0.8;
-}
-
-/* Pesquisar sobre focus
+}/* Pesquisar sobre focus
