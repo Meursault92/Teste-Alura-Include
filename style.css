@@ -13,7 +13,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	flex-direction: column;
-	background-image: url('https://wallpaperaccess.com/full/6109378.png');
+	background-image: ('https://wallpaperaccess.com/full/6109378.png');
 }
 .box{
 	position: relative;
