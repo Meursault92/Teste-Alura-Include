@@ -3,9 +3,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 body{
+	font-family: 'Poppins', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,14 +22,14 @@ body{
 	flex-direction: column;
 }
 .box{
-position: absolute;
-  width: 380px;
-  height: 420px;
-  max-width: 90%;
-  background: #240497;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-top: -100px;
+	position: absolute;
+	width: 380px;
+	height: 420px;
+	max-width: 90%;
+	background: #240497;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-top: -100px;
 }
 .box::before{
 	content: '';
