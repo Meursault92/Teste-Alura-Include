@@ -5,23 +5,31 @@
 	box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-  font-family: 'Poppins', sans-serif;
-}
 body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	flex-direction: column;
-	background-image: ('/home/paulo/Área de Trabalho/Projeto Alura Include/6109378.jpg');
+	background-image: url('6109378.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
 }
 .box{
-	position: relative;
-	width: 380px;
-	height: 420px;
-	background: #240497;
-	border-radius: 8px;
-	overflow: hidden;
+position: absolute;
+  width: 380px;
+  height: 420px;
+  max-width: 90%;
+  background: #240497;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: -100px;
 }
 .box::before{
 	content: '';
